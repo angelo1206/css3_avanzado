@@ -1,0 +1,271 @@
+/* estilos de la pagina css3 advance */
+
+/* titulos de la pagina */
+h1{
+  text-align: center;
+  border-radius: 25px;
+  background: yellow;
+}
+/* Ejemplo de estilos de bordeado */
+.border-radius{
+  color: black;
+  text-align: center;
+  background: aquamarine;
+  border-radius: 25px;
+}
+/* Ejemplo de bordear con imagenes */
+.border-image{
+  text-align: center;
+  color: blue;
+  border: 100px solid black;
+  width: 70%;
+  height: 70%;
+  padding: 15px;
+  top: 50%;
+  border-image: url(logo_leon.jpg)48%;
+}
+/* Ejemplo de degradados lineales */
+.gradients_linear{
+  font-size: 200%;
+  padding: 15%;
+  text-align: center;
+  background-image: linear-gradient(yellow, blue, red);
+  color: black;
+  height: 70%;
+  width: 70%;
+}
+/* Ejemplo degradado por grados */
+.gradients_grados{
+  font-size: 200%;
+  padding: 15%;
+  text-align: center;
+  background-image: linear-gradient(10deg, yellow 10%, blue, red);
+  color: black;
+  height: 70%;
+  width: 70%;
+}
+/* Ejemplo de sombras */
+.shadow{
+  text-align: center;
+  color: black;
+  border-radius: 25px;
+  background: aquamarine;
+  height: 20%;
+  padding: 2%;
+  text-shadow: 3px 3px red;
+  font-size: 200%;
+}
+/* Ejemplo de transition */
+.transition{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+.transition:hover{
+  width: 300%;
+}
+/* Ejemplo de animaciones */
+.animations{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:0px;}
+  75%  {background-color:green; left:300px; top:0px;}
+  100% {background-color:red; left:400px; top:0px;}
+}
+.tooltips{
+  border-radius: 20%;
+  left: 250px;
+  text-align: center;
+  width: 200px;
+  height: 200%;
+  font-family: fantasy;
+  padding: 2%;
+  background: aquamarine;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltips .tooltipstext{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltips:hover .tooltipstext{
+  visibility: visible;
+}
+/* Ejemplo de botones con css3 */
+.boton1{
+  color: white;
+  background-color: green;
+}
+.boton2{
+  color: white;
+  background-color: blue;
+}
+.boton3{
+  color: white;
+  background-color: red;
+}
+.boton4{
+  color: white;
+  background-color: gray;
+}
+.boton5{
+  color: white;
+  background-color: black;
+}
+.botones{
+  margin-left: 180px;
+  left: 250px;
+}
+/* Ejemplo de paginacion */
+.pagination{
+  display: inline-block;
+}
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+.pagination a:hover{
+  background-color: red;
+}
+
+/* Ejemplo de medias query */
+@media screen and (max-width:1920px) {
+  body{
+    background-color: red;
+  }
+}
+@media screen and (max-width:1280px) {
+  body{
+    background-color: black;
+  }
+}
+@media screen and (max-width:800px) {
+    body{
+      background-color: white;
+    }
+}
+@media screen and (max-width:700px) {
+    body{
+      background-color: orange;
+    }
+}
+/* Ejemplo flexbox */
+.flex-container{
+  display: flex;
+  background-color: DodgerBlue;
+  padding: 10px;
+  border: 2px solid black;
+}
+.flex-container div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+/* Ejemplo flexcontainer */
+.flex-container2{
+  flex-direction: row-reverse;
+  display: flex;
+  background-color: DodgerBlue;
+  padding: 10px;
+  border: 2px solid black;
+}
+.flex-container2 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+/* Ejemplo flex-item */
+.flex-container3{
+  display: flex;
+  background-color: DodgerBlue;
+  padding: 10px;
+  border: 2px solid black;
+}
+.flex-container3 div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 20px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  border: 2px solid black;
+}
+/* Ejemplo de flex-resposive */
+.flexcontainer4{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.flex-items-left{
+  font-size: 25px;
+  text-align: center;
+  background: DodgerBlue;
+  padding: 18px;
+  flex: 50%;
+}
+.flex-items-right{
+  font-size: 25px;
+  text-align: center;
+  background: green;
+  padding: 18px;
+  flex: 50%;
+}
+@media (max-width:800px) {
+  .flex-items-left, .flex-items-right{
+    flex: 100%;
+  }
+}
+/* Ejemplo de un GRID */.
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
